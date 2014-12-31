@@ -63,23 +63,11 @@
         DataTable =(NSMutableArray*)responseObject;
         NSLog(@"JSON:  el count is : %lu %@",(unsigned long)[[DataTable valueForKey:@"features"] count] ,[DataTable valueForKey:@"features"]  );
         [self reloadData:YES];
-        //[self ContextData:DataTable isSave:YES];
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"Error: %@", error);
     }];
 }
 
--(void)ContextData:(NSArray*)data isSave:(BOOL)save{
-    if (save) {
-        NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
-        [userDefaults setObject:data forKey:@"tableViewData"];
-        [userDefaults synchronize];
-    }else{
-        NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
-        DataTable = [userDefaults objectForKey:@"tableViewData"];
-    }
-    
-}
 
 -(UIColor*)RangeMag:(float)mag{
     UIColor *colorCell;

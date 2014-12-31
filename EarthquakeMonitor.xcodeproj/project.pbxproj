@@ -12,7 +12,6 @@
 		0A095AB11A53594400043A2B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A095AB01A53594400043A2B /* ViewController.m */; };
 		0A095AB41A53594400043A2B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A095AB21A53594400043A2B /* Main.storyboard */; };
 		0A095AB61A53594400043A2B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A095AB51A53594400043A2B /* Images.xcassets */; };
-		0A095AB91A53594400043A2B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A095AB71A53594400043A2B /* LaunchScreen.xib */; };
 		0A095AC51A53594400043A2B /* EarthquakeMonitorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A095AC41A53594400043A2B /* EarthquakeMonitorTests.m */; };
 		0A095AF61A535B3700043A2B /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A095AD21A535B3700043A2B /* AFHTTPRequestOperation.m */; };
 		0A095AF71A535B3700043A2B /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A095AD41A535B3700043A2B /* AFHTTPRequestOperationManager.m */; };
@@ -57,7 +56,6 @@
 		0A095AB01A53594400043A2B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		0A095AB31A53594400043A2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0A095AB51A53594400043A2B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		0A095AB81A53594400043A2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		0A095ABE1A53594400043A2B /* EarthquakeMonitorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EarthquakeMonitorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A095AC31A53594400043A2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A095AC41A53594400043A2B /* EarthquakeMonitorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EarthquakeMonitorTests.m; sourceTree = "<group>"; };
@@ -157,7 +155,6 @@
 				0A2270981A544F84009FB5F9 /* DetailController.m */,
 				0A095AB21A53594400043A2B /* Main.storyboard */,
 				0A095AB51A53594400043A2B /* Images.xcassets */,
-				0A095AB71A53594400043A2B /* LaunchScreen.xib */,
 				0A095AA81A53594400043A2B /* Supporting Files */,
 			);
 			path = EarthquakeMonitor;
@@ -339,7 +336,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A095AB41A53594400043A2B /* Main.storyboard in Resources */,
-				0A095AB91A53594400043A2B /* LaunchScreen.xib in Resources */,
 				0A095AB61A53594400043A2B /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -410,14 +406,6 @@
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		0A095AB71A53594400043A2B /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0A095AB81A53594400043A2B /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -455,7 +443,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -490,7 +478,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
