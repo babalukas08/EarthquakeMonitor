@@ -7,9 +7,22 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DetailController.h"
+#import "AFNetworking/AFHTTPRequestOperationManager.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>{
+    
+    __weak IBOutlet UITableView *tbEvent;
+    
+    //Variables
+    NSMutableArray *DataTable;
+    UIRefreshControl *refreshControl;
+    NSTimer *_timer;
+    NSInteger selected;
+    int ColorPin;
+}
 
+- (IBAction)ReloadAction:(UIButton *)sender;
 
 @end
 
