@@ -73,17 +73,33 @@
     UIColor *colorCell;
     if (mag >=0.0 && mag <=0.9) {
         colorCell = [UIColor greenColor];
-        ColorPin = 1;
+        
     }else if (mag >= 9.0 && mag <=9.9){
         colorCell = [UIColor redColor];
-        ColorPin = 0;
+        
     }else{
         colorCell = purpleCo;
-        ColorPin = 2;
+        
     }
     
 
     return colorCell;
+}
+-(int)PinColor:(float)mag{
+
+    if (mag >=0.0 && mag <=0.9) {
+        
+        ColorPin = 1;
+    }else if (mag >= 9.0 && mag <=9.9){
+        
+        ColorPin = 0;
+    }else{
+        
+        ColorPin = 2;
+    }
+    
+    
+    return ColorPin;
 }
 -(void)LaunchTimer:(BOOL)is{
     if (is) {
@@ -138,6 +154,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     NSLog(@"pulsando celda %li",(long)indexPath.row);
     selected = indexPath.row;
+    ColorPin = [self PinColor:[[[[[DataTable valueForKey:@"features"] objectAtIndex:indexPath.row] valueForKey:@"properties"] valueForKey:@"mag"] floatValue]];
     [self LaunchTimer:NO];
     [self performSegueWithIdentifier:@"pushDetail" sender:self];
     
